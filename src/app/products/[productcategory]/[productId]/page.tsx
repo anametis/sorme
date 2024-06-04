@@ -1,3 +1,4 @@
+'use client';
 import SpacialOffer from "@/components/SpacialOffer";
 import MaxWithWrapper from "@/components/MaxWithWrapper";
 import Footer from "@/components/Footer";
@@ -6,8 +7,13 @@ import ProductInfo from "@/components/ProductInfo";
 import DiscountCard from "@/components/DiscountCard";
 import SellerInfo from "@/components/SellerInfo";
 import ProductImg from "@/components/ProductImg";
+import { useParams } from "next/navigation";
+import products from "@/data/products";
 
-export default function productDetails(): JSX.Element {
+export default function ProductDetails(): JSX.Element {
+  const {productId} = useParams();
+  const product = products.find((p) => p.id === productId);
+
   return (
     <div className="flex flex-col min-h-screen flex-wrap ">
       <SpacialOffer />
@@ -16,21 +22,16 @@ export default function productDetails(): JSX.Element {
         <div className="flex justify-between items-center flex-wrap">
           <ProductImg />
           <ProductInfo
-            title="Matte floral pancake"
-            productId="654659"
-            description="Floral pancake, which is made of natural materials, is soft, very light on the skin and does not feel heavy on the skin in any way. Also, this pancake does not dry the skin, does not rub on the skin, has a high durability and a velvety and natural look. gives to the face"
-            rating={5}
-            ratingCount={20}
+            title={product?.name}
+            productId={product?.id}
+            description={product?.description}
+            rating={product?.rating}
+            ratingCount={product?.rating}
             className="w-1/2 min-w-96"
           />
         </div>
         <div className="flex items-center w-full justify-between flex-wrap">
-          <DiscountCard
-            originalPrice="120$"
-            discount="25%"
-            finalPrice="67$"
-            // onAddToCart={handleAddToCart}
-          />
+          <DiscountCard productId={product.id} originalPrice={product.price} discount={product.discount} finalPrice={product.price * product.discount} />
           <SellerInfo
             seller="sorme"
             brand="Follero"

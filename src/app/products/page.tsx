@@ -17,42 +17,10 @@ export default function Productcategory() {
     <>
       <SpacialOffer />
       <Header />
-      <MaxWithWrapper>
-        <OrderBy onSortChange={handleSortChange} className="my-4" />
-        <div className="flex gap-10 flex-wrap justify-between">
-          <ProductCard
-            imageSrc="/images/p1.png"
-            productName="Fix Arcanil powder"
-            price={60}
-            rating={5}
-            reviewers={20}
-            productDescription="Lorem ipsum dolor sit amet, "
-          />
-          <ProductCard
-            imageSrc="/images/p1.png"
-            productName="Fix Arcanil powder"
-            price={60}
-            rating={5}
-            reviewers={20}
-            productDescription="Lorem ipsum dolor sit amet, "
-          />
-          <ProductCard
-            imageSrc="/images/p1.png"
-            productName="Fix Arcanil powder"
-            price={60}
-            rating={5}
-            reviewers={20}
-            productDescription="Lorem ipsum dolor sit amet, "
-          />
-          <ProductCard
-            imageSrc="/images/p1.png"
-            productName="Fix Arcanil powder"
-            price={60}
-            rating={5}
-            reviewers={20}
-            productDescription="Lorem ipsum dolor sit amet, "
-          />
-        </div>
+      <MaxWithWrapper >
+        <div></div>
+
+
       </MaxWithWrapper>
       <Footer />
     </>

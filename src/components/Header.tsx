@@ -34,7 +34,7 @@ import MegaMenu from "./MegaMenu";
 
 const Header = (): JSX.Element => {
   const [isHovered, setIsHovered] = useState(false);
-  //shadow-[0_30px_60px_-10px_rgba(0,0,0,0.4)] shadow-[0px_0px_0px_2px_rgba(0, 0, 0, 0.04)
+
   return (
     <div className="w-full sticky z-50 top-0 bg-white shadow-lg">
       <section className="flex flex-col items-center justify-center h-fll pt-2  w-full gap-4 mx-auto max-w-screen-2xl px-8 md:px-8 ">

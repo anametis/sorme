@@ -1,9 +1,12 @@
+'use client';
 import React from "react";
+import { useStore } from "@/hooks/zustand/store";
 
 interface PriceCardProps {
-  originalPrice: string;
-  discount: string;
-  finalPrice: string;
+  productId: string;
+  originalPrice: number;
+  discount: number;
+  finalPrice: number;
   onAddToCart?: () => void;
 }
 
@@ -11,8 +14,12 @@ const DiscountCard: React.FC<PriceCardProps> = ({
   originalPrice,
   discount,
   finalPrice,
+  productId,
   onAddToCart,
 }) => {
+
+  const addToCart = useStore((state) => state.addToCart);
+
   return (
     <div className="flex flex-col items-center justify-center w-1/3 min-w-96 bg-[#FFFAFA] h-56 rounded-[2rem] border-[#F9CCD7] border gap-8 ">
       <div className="flex items-center justify-between relative w-full px-10 py-4">
@@ -26,7 +33,7 @@ const DiscountCard: React.FC<PriceCardProps> = ({
         <div className="text-[#F19AA6] font-bold text-4xl">{finalPrice}</div>
       </div>
       <button
-        onClick={onAddToCart}
+        onClick={()=> addToCart({id: productId, price: finalPrice})}
         className="w-1/2 px-4 py-2 rounded-full bg-[#F39AA7] text-white text-2xl font-semibold focus:outline-none focus:ring focus:ring-pink-200 focus:ring-opacity-50 hover:bg-pink-500 transition ease-in-out"
       >
         Add to cart

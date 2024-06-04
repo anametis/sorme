@@ -8,6 +8,7 @@ type Product = {
   description: string;
   image: string;
   rating: number;
+  discount: number;
 };
 
 type ProductList = Product[];
@@ -21,10 +22,11 @@ const products: ProductList = [
     name: "Air Max 97",
     price: 299.99,
     description:
-      "The Air Max 97 is a lightweight, breathable, and comfortable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Air Max 97 is a lightweight, breathable, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "2",
@@ -34,10 +36,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "3",
@@ -47,10 +50,11 @@ const products: ProductList = [
     name: "Air Max 97",
     price: 299.99,
     description:
-      "The Air Max 97 is a lightweight, breathable, and comfortable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Air Max 97 is a lightweight, breathable,",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "4",
@@ -60,10 +64,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight,",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "5",
@@ -73,10 +78,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "6",
@@ -86,10 +92,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "7",
@@ -99,10 +106,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight.",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "8",
@@ -112,10 +120,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "9",
@@ -125,10 +134,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 299.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight, ",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
   {
     id: "10",
@@ -138,10 +148,11 @@ const products: ProductList = [
     name: "Superstar",
     price: 1000.99,
     description:
-      "The Superstar is a high-performance, lightweight, and breathable shirt that is perfect for everyday wear. It is made of a blend of polyester and spandex, which makes it stretchy and durable. The shirt is available in a variety of colorss, including black, white, and red.",
+      "The Superstar is a high-performance, lightweight.",
     image:
       "https://images.unsplash.com/photo-1500645532-ae0d1d0ee1a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
     rating: 4.5,
+    discount: 25,
   },
 ];
 

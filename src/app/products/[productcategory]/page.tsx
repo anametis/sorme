@@ -31,17 +31,17 @@ export default function Productcategory({ params }: { params: { productcategory:
       <Header />
       <MaxWithWrapper>
         <OrderBy onSortChange={handleSortChange} sortOption={sortOption} className="my-4" />
-        <div className="flex gap-10 flex-wrap justify-between">
+        <div className="flex gap-10 flex-wrap justify-center md:justify-between">
           {products.filter((product) => product.category === productcategory).sort(orderObj[sortOption]).map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               imageSrc={product.image}
               productName={product.name}
               price={product.price}
               rating={product.rating}
               reviewers={product.rating}
               productDescription={product.description}
-
             />
           ))}
         </div>
